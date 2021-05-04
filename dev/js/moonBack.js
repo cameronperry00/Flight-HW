@@ -9,7 +9,7 @@ gsap.registerPlugin(MotionPathPlugin, MotionPathHelper);
 export let moonBackTL = gsap.timeline();
 
 moonBackTL.to("#moon", {duration: 1, x: 500, y: 500, ease: "back"})
-        .to("#moon", {duration: 1, rotation: 180}, "+=.5")
+        .to("#moon", {duration: 1, rotation: -360}, "+=.5")
         .to("#moon", {duration: .5, scale: 3}, "-=.75")
         .from(".moon-things", {duration: .5, alpha: 0}, "-=.75")
         .to("#moon", {duration: .5, scale: 25, x: "-=100", y: "+=460", ease: "power4.out"})
