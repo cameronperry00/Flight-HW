@@ -24,7 +24,7 @@ mainTL.add(fadeInTL)
         .add(moonZoomInTL,"zoomFlight")
         .add(landingTL)
         .add(spaceshipScaleUpTL)
-        .add(moonOutro, "+=1");
+        .add(moonOutroTL, "+=1");
         // .addLabel("marker")
 
         // mainTL.play("marker");
