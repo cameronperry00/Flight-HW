@@ -9,7 +9,7 @@ import { flightTL } from "./flightPath"
 import { moonZoomInTL } from "./moonZoom"
 import { landingTL } from "./landing"
 import { spaceshipScaleUpTL } from "./spaceshipScaleUp"
-import { moonBackTL } from "./moonBack"
+import { moonOutroTL } from "./moonOutro"
 
 gsap.registerPlugin(GSDevTools);
 
@@ -24,7 +24,7 @@ mainTL.add(fadeInTL)
         .add(moonZoomInTL,"zoomFlight")
         .add(landingTL)
         .add(spaceshipScaleUpTL)
-        .add(moonBackTL, "+=1");
+        .add(moonOutro, "+=1");
         // .addLabel("marker")
 
         // mainTL.play("marker");
