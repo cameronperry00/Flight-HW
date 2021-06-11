@@ -1,38 +1,39 @@
 import { gsap } from "gsap";
 import { GSDevTools } from "gsap/GSDevTools";
 
-import { zoomTL } from "./zoomIn"
-import { fadeInTL } from "./fadeIn"
-import { spaceShipTL } from "./space-ship"
-import { liftOffTL } from "./liftOff"
-import { flightTL } from "./flightPath"
-import { moonZoomInTL } from "./moonZoom"
-import { landingTL } from "./landing"
-import { spaceshipScaleUpTL } from "./spaceshipScaleUp"
-import { moonOutroTL } from "./moonOutro"
+// import {numberThing} from "./demo-this"
+
+import { logoTL } from "./logo"
+import { logoZoomoutTL } from "./logoZoomout"
+import { sidePanelTL } from "./sidePanel"
+import { speedometersTL } from "./speedometers"
+import { musicPanelTL } from "./musicPanel"
+import { newScreenTL } from "./newScreen"
+import { navTL } from "./nav"
+
+
+
 
 gsap.registerPlugin(GSDevTools);
 
 let mainTL = gsap.timeline();
-// let mainTL = gsap.timeline({paused:true});
 
-mainTL.add(fadeInTL)
-        .add(zoomTL)
-        .add(spaceShipTL)
-        .add(liftOffTL)
-        .add(flightTL ,"zoomFlight")
-        .add(moonZoomInTL,"zoomFlight")
-        .add(landingTL)
-        .add(spaceshipScaleUpTL)
-        .add(moonOutroTL, "+=1");
-        // .addLabel("marker")
+mainTL.add(logoTL)
 
-        // mainTL.play("marker");
-        // mainTL.play();
+
+        .add(logoZoomoutTL)
+
+        .add(sidePanelTL) 
+        
+        .add(speedometersTL)
+        
+        .add(musicPanelTL)
+
+        .add(newScreenTL)
+        
+        .add(navTL);
 
 
 // console.log(numberThing);
-
-// GSDevTools.create();
 
 
